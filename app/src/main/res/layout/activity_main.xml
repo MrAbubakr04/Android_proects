@@ -7,8 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:padding="30dp"
-    >
+    android:padding="30dp">
 
     <ImageView
         android:id="@+id/logoImg"
@@ -17,14 +16,12 @@
         android:layout_margin="5dp"
         android:adjustViewBounds="true"
         android:src="@drawable/ic_launcher_foreground" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Reset pasword\n"
         android:drawablePadding="1dp"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="20dp"
@@ -33,14 +30,12 @@
         android:gravity="center_vertical"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
-        android:drawablePadding="5dp"
-        />
+        android:drawablePadding="5dp" />
     <EditText
         android:id="@+id/editext1"
         android:drawableEnd="@drawable/baseline_15mp_24"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        />
+        android:layout_height="40dp" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="20dp"
@@ -49,18 +44,15 @@
         android:text="Povtorite Password"
         android:gravity="center_vertical"
         android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        />
-
+        android:paddingRight="8dp" />
     <EditText
         android:id="@+id/editext2"
         android:drawableEnd="@drawable/baseline_15mp_24"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        />
+        android:layout_height="40dp" />
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="buutton"/>
+        android:text="button"/>
 </LinearLayout>
