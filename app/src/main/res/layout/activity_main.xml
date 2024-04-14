@@ -33,6 +33,7 @@
         android:drawablePadding="5dp" />
     <EditText
         android:id="@+id/editext1"
+        android:inputType="numberPassword"
         android:drawableEnd="@drawable/baseline_15mp_24"
         android:layout_width="match_parent"
         android:layout_height="40dp" />
@@ -47,6 +48,7 @@
         android:paddingRight="8dp" />
     <EditText
         android:id="@+id/editext2"
+        android:inputType="numberPassword"
         android:drawableEnd="@drawable/baseline_15mp_24"
         android:layout_width="match_parent"
         android:layout_height="40dp" />

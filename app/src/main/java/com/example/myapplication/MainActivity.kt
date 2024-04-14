@@ -24,17 +24,26 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,seconddActivity::class.java)
             val editText1 = findViewById<EditText>(R.id.editext1)
             val editText2 = findViewById<EditText>(R.id.editext2)
-            val text2 = editText2.text?.toString()
-            val text1 = editText1.text?.toString()
-            if(text1 == text2){
-                startActivity(intent)
-            } else {
-                val text = "Коды не совпадают"
-                val duration = Toast.LENGTH_SHORT // Или Toast.LENGTH_LONG для длительного отображения
+            val text2 = editText2.text.toString()
+            val text1 = editText1.text.toString()
+            if(text1.isEmpty() || text2.isEmpty()){
+                val text = "Введите пароль"
+                val duration = Toast.LENGTH_SHORT
 
                 val toast = Toast.makeText(applicationContext, text, duration)
                 toast.show()
+            }else {
+                if (text1 == text2) {
+                    startActivity(intent)
+                } else {
+                    val text = "Пароли не совпадают"
+                    val duration =
+                        Toast.LENGTH_SHORT
 
+                    val toast = Toast.makeText(applicationContext, text, duration)
+                    toast.show()
+
+                }
             }
 
         }
