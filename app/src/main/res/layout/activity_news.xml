@@ -282,30 +282,27 @@
             android:progress="45"
             app:trackCornerRadius="4dp"
             app:trackThickness="6dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="23dp">
+            android:paddingHorizontal="28dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="23dp">
             <androidx.cardview.widget.CardView
-                android:layout_width="302dp"
+                android:layout_width="match_parent"
                 android:layout_height="102dp"
                 app:cardCornerRadius="14dp"
                 app:cardElevation="0dp"
                 android:layout_marginHorizontal="5dp"
                 app:cardBackgroundColor="#F6F5FB">
                 <RelativeLayout
-                    android:layout_width="302dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
-
                     >
-
                     <TextView
-                        android:layout_alignParentTop="true"
-                        android:layout_alignLeft="@+id/img1"
-                        android:layout_alignParentEnd="true"
-                        android:fontFamily="sans-serif-medium"
+                        android:id="@+id/text_1"
+                        android:layout_alignStart="@id/img1"
                         android:text="How was your day?"
                         android:textColor="#403572"
                         android:textSize="16sp"
@@ -313,20 +310,23 @@
                         android:layout_marginStart="32dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="sans-serif-medium"
                         />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="52dp"
-                        android:layout_alignParentStart="true"
-                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@id/text_1"
+                        android:paddingBottom="16dp"
                         android:fontFamily="sans-serif"
                         android:text="Lorem ipsum dolor sit amet, consectetur
 adipscing elit. Ut vel odio en urna ultrice..."
                         android:textColor="#403572"
-                        android:textSize="12sp"
-                        android:paddingBottom="20dp"/>
+                        android:textSize="12sp" />
 
                     <ImageView
                         android:id="@+id/img1"
@@ -356,23 +356,22 @@ adipscing elit. Ut vel odio en urna ultrice..."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingHorizontal="23dp"
-            android:paddingBottom="23dp">
+            android:paddingHorizontal="28dp">
             <androidx.cardview.widget.CardView
-                android:layout_width="302dp"
+                android:layout_width="match_parent"
                 android:layout_height="102dp"
                 app:cardCornerRadius="14dp"
                 app:cardElevation="0dp"
                 android:layout_marginHorizontal="5dp"
                 app:cardBackgroundColor="#F6F5FB">
                 <RelativeLayout
-                    android:layout_width="302dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    >
+                    android:layout_gravity="center">
 
                     <TextView
                         android:layout_alignParentTop="true"
-                        android:layout_alignLeft="@+id/img2"
+                        android:layout_alignLeft="@id/img2"
                         android:layout_alignParentEnd="true"
                         android:fontFamily="sans-serif-medium"
                         android:text="Current Transist: 3rd House"
