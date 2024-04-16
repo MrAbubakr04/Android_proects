@@ -298,6 +298,7 @@
                 <RelativeLayout
                     android:layout_width="302dp"
                     android:layout_height="100dp"
+
                     >
 
                     <TextView
@@ -343,7 +344,7 @@ adipscing elit. Ut vel odio en urna ultrice..."
                         android:layout_marginEnd="12dp"
                         android:src="@drawable/vector"
                         android:layout_alignParentEnd="true"
-                        android:tint="#403572"
+                        app:tint="#403572"
                         />
                 </RelativeLayout>
 
@@ -412,7 +413,7 @@ efforts, confidence, friends and short tr..."
                         android:layout_marginEnd="12dp"
                         android:src="@drawable/vector"
                         android:layout_alignParentEnd="true"
-                        android:tint="#FF5648"
+                        app:tint="#FF5648"
                         />
                 </RelativeLayout>
 

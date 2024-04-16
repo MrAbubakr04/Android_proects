@@ -22,7 +22,7 @@
                 android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/title_text_color"
-                android:src="@drawable/Ellipse5"
+                android:src="@drawable/ellipse5"
                 android:textStyle="normal" />
 
             <ImageView
@@ -55,7 +55,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Change profile"
+                    android:text="@string/aaa"
+
                     android:fontFamily="sans-serif-medium"
                     android:textColor="@color/tytle_text_collor"/>
             </LinearLayout>
