@@ -297,8 +297,8 @@
                 android:layout_marginHorizontal="5dp"
                 app:cardBackgroundColor="#F6F5FB">
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     >
                     <TextView
                         android:id="@+id/text_1"
@@ -319,9 +319,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="50dp"
+                        android:layout_alignParentBottom="true"
                         android:layout_alignParentTop="true"
                         android:layout_alignStart="@id/text_1"
-                        android:paddingBottom="16dp"
                         android:fontFamily="sans-serif"
                         android:text="Lorem ipsum dolor sit amet, consectetur
 adipscing elit. Ut vel odio en urna ultrice..."
@@ -370,25 +370,27 @@ adipscing elit. Ut vel odio en urna ultrice..."
                     android:layout_gravity="center">
 
                     <TextView
+                        android:id="@+id/text_2"
+                        android:layout_marginStart="32dp"
                         android:layout_alignParentTop="true"
-                        android:layout_alignLeft="@id/img2"
+                        android:layout_alignStart="@id/img2"
                         android:layout_alignParentEnd="true"
                         android:fontFamily="sans-serif-medium"
                         android:text="Current Transist: 3rd House"
                         android:textColor="#FF5648"
                         android:textSize="16sp"
                         android:layout_marginTop="24dp"
-                        android:layout_marginStart="32dp"
+
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         />
 
                     <TextView
-                        android:layout_width="220dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="52dp"
-                        android:layout_alignParentStart="true"
+                        android:layout_alignStart="@id/text_2"
                         android:layout_alignParentBottom="true"
+                        android:layout_marginTop="50dp"
                         android:fontFamily="sans-serif"
                         android:text="This is demonstrate siblings, hobbies,
 efforts, confidence, friends and short tr..."
@@ -407,6 +409,7 @@ efforts, confidence, friends and short tr..."
                         android:src="@drawable/clock1" />
                     <ImageView
                         android:layout_width="12dp"
+
                         android:layout_height="12dp"
                         android:layout_marginTop="44dp"
                         android:layout_marginEnd="12dp"
