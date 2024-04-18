@@ -316,6 +316,7 @@
                         />
 
                     <TextView
+                        android:layout_toStartOf="@id/img11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="50dp"
@@ -338,6 +339,7 @@ adipscing elit. Ut vel odio en urna ultrice..."
                         android:layout_marginTop="22dp"
                         android:src="@drawable/calendar_1" />
                     <ImageView
+                        android:id="@+id/img11"
                         android:layout_width="12dp"
                         android:layout_height="12dp"
                         android:layout_marginTop="44dp"
@@ -365,9 +367,8 @@ adipscing elit. Ut vel odio en urna ultrice..."
                 android:layout_marginHorizontal="5dp"
                 app:cardBackgroundColor="#F6F5FB">
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:id="@+id/text_2"
@@ -386,10 +387,12 @@ adipscing elit. Ut vel odio en urna ultrice..."
                         />
 
                     <TextView
+                        android:layout_toStartOf="@id/img22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_alignStart="@id/text_2"
                         android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
                         android:layout_marginTop="50dp"
                         android:fontFamily="sans-serif"
                         android:text="This is demonstrate siblings, hobbies,
@@ -409,7 +412,7 @@ efforts, confidence, friends and short tr..."
                         android:src="@drawable/clock1" />
                     <ImageView
                         android:layout_width="12dp"
-
+                        android:id="@+id/img22"
                         android:layout_height="12dp"
                         android:layout_marginTop="44dp"
                         android:layout_marginEnd="12dp"
