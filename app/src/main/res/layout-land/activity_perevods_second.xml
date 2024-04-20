@@ -17,18 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="16dp">
-                <androidx.appcompat.widget.Toolbar
-                    android:layout_width="wrap_content"
-                    android:layout_height="?attr/actionBarSize"
-                    android:id="@+id/humo_perevod_toolbar1"
-                    android:elevation="4dp"
-                    android:layout_marginStart="-18dp"
-                    android:layout_alignParentStart="true"
-                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-                    />
                 <TextView
-                    android:layout_below="@id/humo_perevod_toolbar1"
-                    android:id="@+id/humo_perevod_text4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Переводы зарубеж"
@@ -44,38 +33,6 @@
                 app:cardBackgroundColor="@color/white"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="16dp"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="12dp"
-                app:cardElevation="0dp">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/humo_9"
-                        android:id="@+id/humo_perevod_image13"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentStart="true"/>
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_marginEnd="8dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"
-                        android:layout_toEndOf="@id/humo_perevod_image13"
-                        android:layout_height="wrap_content"/>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_gravity="center"
-                android:layout_width="match_parent"
-                app:cardBackgroundColor="@color/white"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="16dp"
-                android:layout_marginHorizontal="16dp"
-                android:layout_marginTop="16dp"
                 app:cardElevation="0dp">
                 <LinearLayout
                     android:layout_width="match_parent"
