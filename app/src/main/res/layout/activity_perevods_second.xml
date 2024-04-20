@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/material_dynamic_neutral90">
+    android:background="@color/material_dynamic_neutral90"
+    android:orientation="vertical">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -17,233 +19,252 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="16dp">
+
                 <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/humo_perevod_toolbar1"
                     android:layout_width="wrap_content"
                     android:layout_height="?attr/actionBarSize"
-                    android:id="@+id/humo_perevod_toolbar1"
-                    android:elevation="4dp"
-                    android:layout_marginStart="-18dp"
                     android:layout_alignParentStart="true"
-                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-                    />
+                    android:layout_marginStart="-18dp"
+                    android:elevation="4dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
                 <TextView
-                    android:layout_below="@id/humo_perevod_toolbar1"
                     android:id="@+id/humo_perevod_text4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@id/humo_perevod_toolbar1"
+                    android:fontFamily="sans-serif-medium"
                     android:text="Переводы зарубеж"
                     android:textColor="#171717"
                     android:textSize="28sp"
-                    android:textStyle="normal"
-                    android:fontFamily="sans-serif-medium"/>
+                    android:textStyle="normal" />
             </RelativeLayout>
 
             <androidx.cardview.widget.CardView
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                app:cardBackgroundColor="@color/white"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="16dp"
+                android:layout_gravity="center"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+
                     <ImageView
+                        android:id="@+id/humo_perevod_image13"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/humo_9"
-                        android:id="@+id/humo_perevod_image13"
+                        android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
-                        android:layout_alignParentStart="true"/>
+                        android:src="@drawable/humo_9" />
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_marginEnd="8dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="<SearchView"
                         android:layout_marginBottom="8dp"
-                        android:layout_toEndOf="@id/humo_perevod_image13"
-                        android:layout_height="wrap_content"/>
+                        android:layout_toEndOf="@id/humo_perevod_image13" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                app:cardBackgroundColor="@color/white"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="16dp"
+                android:layout_gravity="center"
                 android:layout_marginHorizontal="16dp"
                 android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="0dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:paddingHorizontal="16dp"
                     android:paddingTop="16dp"
-                    android:paddingBottom="8dp"
-                    android:orientation="vertical">
+                    android:paddingBottom="8dp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:layout_centerVertical="true"
                             android:id="@+id/humo_perevod_image6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/humo_3"/>
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/humo_3" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
                             android:layout_marginVertical="18dp"
+                            android:layout_marginStart="16dp"
                             android:layout_marginEnd="8dp"
                             android:layout_toEndOf="@id/humo_perevod_image6"
-                            android:text="Россия"
-                            android:textStyle="normal"
-                            android:textSize="16sp"
-                            android:textColor="@color/humo_perevod_color1"
                             android:fontFamily="sans-serif-medium"
-                            />
+                            android:text="Россия"
+                            android:textColor="@color/humo_perevod_color1"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:layout_centerVertical="true"
                             android:id="@+id/humo_perevod_image7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/humo_4"/>
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/humo_4" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
                             android:layout_marginVertical="18dp"
+                            android:layout_marginStart="16dp"
                             android:layout_marginEnd="8dp"
                             android:layout_toEndOf="@id/humo_perevod_image7"
-                            android:text="Узбекистан"
-                            android:textStyle="normal"
-                            android:textSize="16sp"
-                            android:textColor="@color/humo_perevod_color1"
                             android:fontFamily="sans-serif-medium"
-                            />
+                            android:text="Узбекистан"
+                            android:textColor="@color/humo_perevod_color1"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:layout_centerVertical="true"
                             android:id="@+id/humo_perevod_image8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/humo_2"/>
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/humo_2" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
                             android:layout_marginVertical="18dp"
+                            android:layout_marginStart="16dp"
                             android:layout_marginEnd="8dp"
                             android:layout_toEndOf="@id/humo_perevod_image8"
-                            android:text="Таджикистан"
-                            android:textStyle="normal"
-                            android:textSize="16sp"
-                            android:textColor="@color/humo_perevod_color1"
                             android:fontFamily="sans-serif-medium"
-                            />
+                            android:text="Таджикистан"
+                            android:textColor="@color/humo_perevod_color1"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:layout_centerVertical="true"
                             android:id="@+id/humo_perevod_image9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/humo_5"/>
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/humo_5" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
                             android:layout_marginVertical="18dp"
+                            android:layout_marginStart="16dp"
                             android:layout_marginEnd="8dp"
                             android:layout_toEndOf="@id/humo_perevod_image9"
-                            android:text="Казахстан"
-                            android:textStyle="normal"
-                            android:textSize="16sp"
-                            android:textColor="@color/humo_perevod_color1"
                             android:fontFamily="sans-serif-medium"
-                            />
+                            android:text="Казахстан"
+                            android:textColor="@color/humo_perevod_color1"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:layout_centerVertical="true"
                             android:id="@+id/humo_perevod_image10"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/humo_6"/>
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/humo_6" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
                             android:layout_marginVertical="18dp"
+                            android:layout_marginStart="16dp"
                             android:layout_marginEnd="8dp"
                             android:layout_toEndOf="@id/humo_perevod_image10"
-                            android:text="ОАЭ"
-                            android:textStyle="normal"
-                            android:textSize="16sp"
-                            android:textColor="@color/humo_perevod_color1"
                             android:fontFamily="sans-serif-medium"
-                            />
+                            android:text="ОАЭ"
+                            android:textColor="@color/humo_perevod_color1"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:layout_centerVertical="true"
                             android:id="@+id/humo_perevod_image11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/humo_7"/>
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/humo_7" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
                             android:layout_marginVertical="18dp"
+                            android:layout_marginStart="16dp"
                             android:layout_marginEnd="8dp"
                             android:layout_toEndOf="@id/humo_perevod_image11"
-                            android:text="Корея"
-                            android:textStyle="normal"
-                            android:textSize="16sp"
-                            android:textColor="@color/humo_perevod_color1"
                             android:fontFamily="sans-serif-medium"
-                            />
+                            android:text="Корея"
+                            android:textColor="@color/humo_perevod_color1"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
                     </RelativeLayout>
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
                         <ImageView
-                            android:layout_centerVertical="true"
                             android:id="@+id/humo_perevod_image12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/humo_8"/>
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/humo_8" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
                             android:layout_marginVertical="18dp"
+                            android:layout_marginStart="16dp"
                             android:layout_marginEnd="8dp"
                             android:layout_toEndOf="@id/humo_perevod_image12"
-                            android:text="Украина"
-                            android:textStyle="normal"
-                            android:textSize="16sp"
-                            android:textColor="@color/humo_perevod_color1"
                             android:fontFamily="sans-serif-medium"
-                            />
+                            android:text="Украина"
+                            android:textColor="@color/humo_perevod_color1"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
                     </RelativeLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
