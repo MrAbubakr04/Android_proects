@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import com.example.myapplication.R
 import androidx.appcompat.widget.Toolbar
 class SecondPerevodsActivity : AppCompatActivity(){
+    private var but: AppCompatButton? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
