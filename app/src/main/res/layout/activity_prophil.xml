@@ -81,77 +81,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="20dp"
-                >
-                <androidx.cardview.widget.CardView
+                android:paddingBottom="20dp">
+
+                <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="0dp"
-                    android:layout_marginEnd="6dp"
-                    app:cardBackgroundColor="#F5F9F9">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="8dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Analytics"
-                            android:textSize="12dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:textColor="@color/profil_tetx_color_1"
-                            />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="0dp"
-                    android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="#F5F9F9">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="8dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Perfectionism"
-                            android:textSize="12dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:textColor="@color/profil_tetx_color_1"
-                            />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="0dp"
-                    android:layout_marginEnd="6dp"
-                    app:cardBackgroundColor="#F5F9F9">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="8dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Analytics"
-                            android:textSize="12dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:textColor="@color/profil_tetx_color_1"
-                            />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
+                    android:id="@+id/Recycler_View"
+                    />
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -462,6 +398,7 @@
                 </androidx.cardview.widget.CardView>
             </GridLayout>
         </HorizontalScrollView>
+
 
     </LinearLayout>
 
