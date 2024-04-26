@@ -56,7 +56,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/aaa"
-
                     android:fontFamily="sans-serif-medium"
                     android:textColor="@color/tytle_text_collor"/>
             </LinearLayout>
@@ -84,10 +83,10 @@
                 android:paddingBottom="20dp">
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/Recycler_View"
-                    />
+                    android:orientation="horizontal"
+                    android:id="@+id/RecyclerView1" />
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -109,56 +108,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:paddingBottom="38dp"
-                >
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="0dp"
-                    android:layout_marginEnd="8dp"
-                    app:cardBackgroundColor="#FFF4F4">
+                android:paddingBottom="20dp">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="8dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Perfectionism"
-                            android:textSize="12dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:textColor="#FF7E73"
-                            />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="wrap_content"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="0dp"
-                    android:layout_marginEnd="6dp"
-                    app:cardBackgroundColor="#FFF4F4">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="8dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Analytics"
-                            android:textSize="12dp"
-                            android:fontFamily="sans-serif-medium"
-                            android:textColor="#FF7E73"
-                            />
-                    </RelativeLayout>
-                </androidx.cardview.widget.CardView>
+                    android:orientation="horizontal"
+                    android:id="@+id/RecyclerView2" />
             </LinearLayout>
         </HorizontalScrollView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
